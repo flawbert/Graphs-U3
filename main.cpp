@@ -44,19 +44,19 @@ int main() {
     }
     vector<InstanciaProblema> problemas; //define as instancias a serem resolvidas (problemas)
     // Bloco 01 - Km
-    problemas.push_back({1, "Km", intervalo(1, 48)});    // Inst 1: 48 Cidades
-    problemas.push_back({2, "Km", intervalo(1, 36)});   // Inst 2: 36 Cidades
-    problemas.push_back({3, "Km", intervalo(1, 24)});   // Inst 3: 24 Cidades
-    problemas.push_back({4, "Km", intervalo(1, 12)});   // Inst 4: 12 Cidades
+    problemas.push_back({1, "Km", intervalo(1, 48)});    // Inst 1: 48 Corpos do universo
+    problemas.push_back({2, "Km", intervalo(1, 36)});   // Inst 2: 36 Corpos do universo
+    problemas.push_back({3, "Km", intervalo(1, 24)});   // Inst 3: 24 Corpos do universo
+    problemas.push_back({4, "Km", intervalo(1, 12)});   // Inst 4: 12 Corpos do universo
     problemas.push_back({5, "Km", {1, 7, 8, 9, 10, 11, 12}}); //Inst 5: 7 setores aleatórias
-    problemas.push_back({6, "Km", intervalo(1, 6)});   // Inst 5: 6 Cidades
+    problemas.push_back({6, "Km", intervalo(1, 6)});   // Inst 5: 6 Corpos do universo
     // Bloco 02 - Min
-    problemas.push_back({7, "Min", intervalo(1, 48)});    // Inst 7: 48 Cidades
-    problemas.push_back({8, "Min", intervalo(1, 36)});   // Inst 8: 36 Cidades
-    problemas.push_back({9, "Min", intervalo(1, 24)});   // Inst 9: 24 Cidades
-    problemas.push_back({10, "Min", intervalo(1, 12)});  // Inst 10: 12 Cidades
+    problemas.push_back({7, "Min", intervalo(1, 48)});    // Inst 7: 48 Corpos do universo
+    problemas.push_back({8, "Min", intervalo(1, 36)});   // Inst 8: 36 Corpos do universo
+    problemas.push_back({9, "Min", intervalo(1, 24)});   // Inst 9: 24 Corpos do universo
+    problemas.push_back({10, "Min", intervalo(1, 12)});  // Inst 10: 12 Corpos do universo
     problemas.push_back({11, "Min", {1, 7, 8, 9, 10, 11, 12}}); //Inst 11: 7 setores aleatórias
-    problemas.push_back({12, "Min", intervalo(1, 6)});  // Inst 12: 6 setores
+    problemas.push_back({12, "Min", intervalo(1, 6)});  // Inst 12: 6 Corpos do universo
     
     cout << "\n=====================================================================================================" << endl;
     cout << "                           DIÁRIO DE BORDO - MISSÕES DA FROTA ESTELAR CAIXEIRO VIAJANTE" << endl;
