@@ -12,7 +12,7 @@ using namespace std;
 
 class LeitorDados {
 private:
-    static void processarLinhaCidades(string linha, vector<string>& nomes) { // Função auxiliar para processar uma linha do arquivo de cidades
+    static void processarLinhaGalaxias(string linha, vector<string>& nomes) { // Função auxiliar para processar uma linha do arquivo de galáxias
         linha.erase(remove(linha.begin(), linha.end(), '\r'), linha.end());
         stringstream ss(linha);
         string segmento;
@@ -91,7 +91,7 @@ public:
         string linha;
 
         if (!arquivo.is_open()) {
-            cerr << "ERRO: Não foi possivel abrir o arquivo de cidades: " << caminho << endl;
+            cerr << "ERRO: Não foi possivel abrir o arquivo de galáxias: " << caminho << endl;
             return nomes;
         }
         if (getline(arquivo, linha)) { //Lê a primeira linha para verificar se é cabeçalho
@@ -103,11 +103,11 @@ public:
             }
 
             if (!ehCabecalho) { //Se for diferente de cabeçalho, processa a linha
-                processarLinhaCidades(linha, nomes);
+                processarLinhaGalaxias(linha, nomes);
             }
         }
         while (getline(arquivo, linha)) { //Processa as linhas restantes
-            processarLinhaCidades(linha, nomes);
+            processarLinhaGalaxias(linha, nomes);
         }
         arquivo.close();
         return nomes;

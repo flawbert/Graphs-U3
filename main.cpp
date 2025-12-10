@@ -23,7 +23,7 @@ int main() {
 
     imprimirCabecalhoCosmico();
 
-    cout << "\n>>> INICIANDO PROTOCOLO DE NAVEGACAO TRAPPIST-1 v9.8 <<<" << endl;
+    cout << "\n>>> INICIANDO PROTOCOLO DE NAVEGAÇÃO TRAPPIST-1 v9.8 <<<" << endl;
     cout << ">>> CONECTANDO AO BANCO DE DADOS DA CONFEDERAÇÃO GALÁCTICA..." << endl; //Aqui vai chamar o LeitorDados que eu criei e ler os arquivos CSV
 
     cout << "\n[SISTEMA] Carregando Cartas Estelares de Consumo (Combustivel)..." << endl;
@@ -55,8 +55,8 @@ int main() {
     problemas.push_back({8, "Min", intervalo(1, 36)});   // Inst 8: 36 Cidades
     problemas.push_back({9, "Min", intervalo(1, 24)});   // Inst 9: 24 Cidades
     problemas.push_back({10, "Min", intervalo(1, 12)});  // Inst 10: 12 Cidades
-    problemas.push_back({11, "Min", {1, 7, 8, 9, 10, 11, 12}}); //Inst 12: 7 setores aleatórias
-    problemas.push_back({12, "Min", intervalo(1, 6)});  // Inst 11: 6 setores
+    problemas.push_back({11, "Min", {1, 7, 8, 9, 10, 11, 12}}); //Inst 11: 7 setores aleatórias
+    problemas.push_back({12, "Min", intervalo(1, 6)});  // Inst 12: 6 setores
     
     cout << "\n=====================================================================================================" << endl;
     cout << "                           DIÁRIO DE BORDO - MISSÕES DA FROTA ESTELAR CAIXEIRO VIAJANTE" << endl;
@@ -90,8 +90,7 @@ int main() {
                   << setw(15) << fixed << setprecision(2) << solInicial.custoTotal
                   << setw(15) << solSwap.custoTotal
                   << setw(15) << solShift.custoTotal
-                  << setw(15) << sol2Opt.custoTotal << "[ ";
-        
+                  << setw(15) << sol2Opt.custoTotal << "[ ";      
         // Imprime a rota com os nomes das setores
         for (size_t i = 0; i < melhorSol->sequencia.size(); i++) {
             string nome = g.getNome(melhorSol->sequencia[i]);

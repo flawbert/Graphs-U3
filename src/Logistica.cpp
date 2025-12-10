@@ -1,7 +1,6 @@
 #include "../include/Logistica.hpp"
 #include <algorithm>
 #include <limits>
-#include <iostream>
 using namespace std;
 
 void Rota::calcularCusto(const Grafo& g){
@@ -11,7 +10,7 @@ void Rota::calcularCusto(const Grafo& g){
     }
 }
 Rota Logistica::Insercao_mais_proxima(const Grafo& G, int s) {
-    int N = G.getNumCidades();
+    int N = G.getNumGalaxias();
     vector<bool> inserido(N, false);
     int v0 = -1; //v0 é o primeiro vértice a ser inserido após s
     double min_dist = numeric_limits<double>::max();
